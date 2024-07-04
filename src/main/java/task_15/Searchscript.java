@@ -34,6 +34,7 @@ public class Searchscript {
 		
 		search.sendKeys("Selenium Browser Driver",Keys.ENTER);
 		
+		driver.close();	
 	}
 
 }

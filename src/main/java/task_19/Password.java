@@ -33,7 +33,7 @@ public class Password {
 		
 		//find element using class name
 		
-		driver.findElement(By.xpath("(//input[contains(@class,'form-control')])[3]")).sendKeys("123456");
+		driver.findElement(By.xpath("(//input[contains(@class,'form-control')])[3]")).sendKeys("A123456");
 		
 		//find element using css selector id
 		

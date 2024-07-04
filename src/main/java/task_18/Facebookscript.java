@@ -1,4 +1,4 @@
-package task_17;
+package task_18;
 
 import java.time.Duration;
 

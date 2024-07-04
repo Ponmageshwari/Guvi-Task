@@ -45,7 +45,7 @@ public class Fullname {
 		
 		//close the website
 		
-		driver.close();
+		//driver.close();
 	}
 
 }
