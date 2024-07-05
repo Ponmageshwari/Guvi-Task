@@ -58,7 +58,7 @@ public class Datepicker {
 	    
 	   System.out.println("Selected date is:" + text);
 	   
-	   //driver.close();
+	   driver.close();
 	   
 	   
 	    

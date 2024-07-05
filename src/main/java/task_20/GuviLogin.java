@@ -4,11 +4,14 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GuviLogin {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
         WebDriver driver = new ChromeDriver();
@@ -25,6 +28,7 @@ public class GuviLogin {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
+		
 		driver.findElement(By.xpath("//a[text()='Sign up']")).click();
 		
 		//find element of fullname
@@ -33,7 +37,7 @@ public class GuviLogin {
 				
 				////find element of email
 				
-				driver.findElement(By.cssSelector("input#email")).sendKeys("mahi@guvi.in");
+				driver.findElement(By.cssSelector("input#email")).sendKeys("mahi1@guvi.in");
 				
 				//find element of password
 				
@@ -50,8 +54,7 @@ public class GuviLogin {
 				driver.findElement(By.id("laterBtn")).click();
 				
 				driver.navigate().back();
-				
-				driver.findElement(By.xpath("//a[text()='Login']"));
+							
 	}
 
 }
